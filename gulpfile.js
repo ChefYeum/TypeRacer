@@ -23,13 +23,13 @@ const paths = {
 	scss: {
 		src: "src/scss/**/*.scss",
 		main: "src/scss/*.scss",
-		prod: "prod/css",
+		prod: "prod/static/css",
 		dist: "dist/css"
 	},
 	ts: {
 		src: "src/ts/**/*.js",
 		main: "src/ts/*.js",
-		prod: "prod/js",
+		prod: "prod/static/js",
 		dist: "dist/js"
 	},
 	php: {
@@ -143,4 +143,4 @@ exports.css = prod_css;
 exports.js = prod_js;
 exports.watch = watch;
 exports.build = build;
-exports.default = build;
+exports.default = watch;

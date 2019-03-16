@@ -1057,7 +1057,7 @@ $('body').ready(function(){
 						.text()
 						.split('')
 						.filter(elem => elem != '\t');
-		alert(array)
+		// alert(array)
 	});
 });
 
