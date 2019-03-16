@@ -6,9 +6,16 @@ var Counters = require('./imports/counters')
 $('body').ready(function(){
 	$("#code-input").keypress(function() {
 		console.log( "Handler for .keypress() called." );
-		var array = $("#to-be-written").text().split('');
+		var array = $("#to-be-written")
+						.text()
+						.split('')
+						.filter(elem => elem != '\t');
 		alert(array)
 	});
 });
+
+function checkTab(ele) {
+	ele != '\t';
+}
 
 w3CodeColor();
