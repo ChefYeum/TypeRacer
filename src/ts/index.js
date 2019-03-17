@@ -119,10 +119,10 @@ $('body').ready(function(){
 			line_on ++;
 			input.text("")
 			nc = lines.slice(0,line_on).join('\n').length
-			var cpm = nc*(60*minutes+seconds)/60
-			console.log(nc)
-			console.log(minutes);
-			console.log(seconds)
+			var cpm = Math.round(nc*60/(60*minutes+seconds+Math.round(cents/100)))
+			// console.log(nc)
+			// console.log(minutes);
+			// console.log(seconds)
 			if (line_on != lines.length){
 				lpm.text(cpm);
 
