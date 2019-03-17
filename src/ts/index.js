@@ -30,7 +30,7 @@ $('body').ready(function(){
 		} else if(lang == "Python") {
 			ui.html($("#to-python").html());
 		}
-		nc = ui.text().length;
+		// nc = ui.text().length;
 		lines = ui.text().split('\n')//.map($.trim);
 		$("#choice").hide();
 		// alert(lines)
@@ -118,7 +118,11 @@ $('body').ready(function(){
 			times.push({"min": minutes, "sec": seconds, "cents": cents})
 			line_on ++;
 			input.text("")
+			nc = lines.slice(0,line_on).join('\n').length
 			var cpm = nc*(60*minutes+seconds)/60
+			console.log(nc)
+			console.log(minutes);
+			console.log(seconds)
 			if (line_on != lines.length){
 				lpm.text(cpm);
 				setUI();

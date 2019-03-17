@@ -165,10 +165,16 @@ nav {
 .lang-choice{
 	width: 200px !important;
 	height: 350px;
-	background-size: cover !important;
+	background-size: contain !important;
 	color: rgba(0,0,0,0);
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.lang-choice:hover{
+	color: rgba(255,255,255,1)!important;
 }
 
 #t {background: url(/t.jpg)!important}
-#h {background: url(/h.jpg)}
+#h {background: url(/j.jpg)}
 #p {background: url(/p.jpg)}
