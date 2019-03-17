@@ -125,12 +125,15 @@ $('body').ready(function(){
 			console.log(seconds)
 			if (line_on != lines.length){
 				lpm.text(cpm);
+
 				setUI();
 			} else {
 				console.log("won")
 				clearTimeout(t);
 				p.css("font-size", "30px");
 				p.css("color", "#f00");
+				ui.html(lines.join('\n'));
+				w3CodeColor();
 			}
 		} else {
 			ev.preventDefault();
