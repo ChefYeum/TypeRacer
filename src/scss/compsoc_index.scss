@@ -95,24 +95,27 @@ nav {
 	// color: #fff;
 }
 
-.w3-code{
-	text-align: left!important;
-	color: #fff;
-	background: #000;
-	// border: 1px solid $primary-color;
-}
-
-#typed-strings{
-	display: block;
-}
-
 .code-input-div {
 	background: #222;
 	padding: 0 16px !important;
 }
 
 #typed {
-	
+	text-align: left !important;
+	// color: #fff;
+	// background: #000;
+	font-family: Consolas,"courier new" !important;
+}
+
+#to-be-written {
+	text-align: left !important;
+	color: #fff;
+	background: #000;
+	font-family: Consolas,"courier new" !important;
+
+	& span{
+		font-family: inherit;
+	}
 }
 
 .code-input {
@@ -127,4 +130,34 @@ nav {
 	&::focus {
 
 	}
+}
+
+.end-of-input {
+	font-size: 20px;
+	padding-right: 5px;
+	display: inline-block;
+	font-family: "Lato", sans-serif;
+}
+
+.end-of-input:after {
+	content: '';
+	width: 1px;
+	height: 16px;
+	background: #00f;
+	opacity: 0;
+	display: inline-block;
+	animation: blink 0.5s linear infinite alternate;
+}
+
+@keyframes blink {
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+}
+
+.cron {
+	margin-right: 10px;
 }

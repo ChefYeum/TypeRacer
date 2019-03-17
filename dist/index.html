@@ -1,1 +1,33 @@
-<!DOCTYPE html><html lang="en-GB"><title>CodeRacer</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="apple-mobile-web-app-title" content="Lorenzo 4 SocSec"><link href="/icons/favicon.png" rel="icon"><link rel="apple-touch-icon" href="icons/big-favicon.png"><!-- W3CSS(Google fonts, Font awesome) --><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- Font awesome, google fonts at the end. --><!-- build:css css/combined.css --><link rel="stylesheet" href="css/compsoc_index.css"><!-- endbuild --><body><!-- Navbar (sit on top) --><nav class="w3-top w3-bar w3-xlarge"><a href="#home" class="w3-bar-item">&lt;CodeRacer/&gt;</a><div class="w3-right"><a href="#about" class="w3-bar-item w3-hide-medium w3-hide-small">Why?</a> <a href="#CV" class="w3-bar-item w3-hide-medium w3-hide-small">Help</a> <a href="#projects" class="w3-bar-item w3-hide-medium w3-hide-small">Team</a></div></nav><!-- First Parallax Image with Logo Text --><div class="spannerBg spanner-1 w3-display-container" id="home"><div class="w3-display-middle" style="white-space:nowrap;"><div class="w3-padding-large w3-wide w3-center"><div class="w3-code htmlHigh notranslate w3-card p-border" id="to-be-written">&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&emsp;&lt;title&gt;HTML Tutorial&lt;/title&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;This is a heading&lt;/h1&gt;<br>&emsp;&emsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div></div><div class="w3-padding-large w3-wide p-border code-input-div"><p id="typed" style="margin: 5px;" contenteditable="false"><span class="p-text" style="height: 24px;">$></span> <span contenteditable autofocus id="code-input" class="w3-code htmlHigh notranslate code-input"></span></p></div></div></div><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"><!-- jQuery --><script defer="defer" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://www.w3schools.com/lib/w3codecolor.js"></script><!-- build:js js/lib.js --><script defer="defer" src="js/index.js"></script><!-- endbuild --></body></html>
+<!DOCTYPE html><html lang="en-GB"><title>CodeRacer</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="apple-mobile-web-app-title" content="Lorenzo 4 SocSec"><link href="/icons/favicon.png" rel="icon"><link rel="apple-touch-icon" href="icons/big-favicon.png"><!-- W3CSS(Google fonts, Font awesome) --><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><!-- Font awesome, google fonts at the end. --><!-- build:css css/combined.css --><link rel="stylesheet" href="css/compsoc_index.css"><!-- endbuild --><body><pre class="p-border w3-hide" id="to-html">&lt;!DOCTYPE html>
+&lt;html>
+&lt;title>HTML Tutorial&lt;/title>
+&lt;body>
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+&lt;/body>
+&lt;/html></pre><pre class="p-border w3-hide" id="to-haskell">handleKeys :: Event -> FbGame -> FbGame
+handleKeys (EventKey (Char 'l') (Down) _ _) game
+&nbsp; | gameMode game == 4 = game {gameMode = 1}
+&nbsp; | otherwise = game {gameMode = 4}
+handleKeys (EventKey (Char 'p') (Down) _ _) game
+&nbsp; | gameMode game == 2 = game {gameMode = 1}
+&nbsp; | otherwise = game {gameMode = 2}
+handleKeys _ game = game</pre><pre class="p-border w3-hide" id="to-python">def file_len(fname):
+&nbsp; &nbsp;&nbsp;with open(fname) as f:
+&nbsp; &nbsp;&nbsp;for i , l in enumerate(f):
+&nbsp; &nbsp;&nbsp;pass
+&nbsp; &nbsp;&nbsp;return i + 1
+def look(fpath):
+	for path, subdirs, files in os.walk(fpath):
+		for name in files:
+			if(r'(' in name.lower()):
+				print(name)
+				os.rename(os.path.join(path,name),
+					re.sub("[\(\[].*?[\)\]]", "", name))</pre><!-- Navbar (sit on top) --><nav class="w3-top w3-bar w3-xlarge"><a href="#home" class="w3-bar-item">&lt;CodeRacer/&gt;</a><div class="w3-right"><a href="#about" class="w3-bar-item w3-hide-medium w3-hide-small">Why?</a> <a href="#CV" class="w3-bar-item w3-hide-medium w3-hide-small">Help</a> <a href="#projects" class="w3-bar-item w3-hide-medium w3-hide-small">Team</a></div></nav><!-- First Parallax Image with Logo Text --><div class="spannerBg spanner-1 w3-display-container" id="choice"><div class="w3-display-middle" style="white-space:nowrap; width: 450px;"><p>Choose your fav programming language</p><div class="w3-bar w3-light-grey"><button class="w3-bar-item w3-button lang-choice">HTML</button> <button class="w3-bar-item w3-button lang-choice">Haskell</button> <button class="w3-bar-item w3-button lang-choice">Python</button></div></div></div><!-- First Parallax Image with Logo Text --><div class="spannerBg spanner-1 w3-display-container" id="home"><div class="w3-display-middle" style="white-space:nowrap; width: 900px;"><div><p id="stats">000 lines per minute <span class="w3-right cron" id="fulltime">00:00.00</span></p></div><div class="w3-no-padding w3-wide w3-center"><pre class="p-border" id="to-be-written">&lt;!DOCTYPE html>
+&lt;html>
+&lt;title>HTML Tutorial&lt;/title>
+&lt;body>
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+&lt;/body>
+&lt;/html></pre></div><div class="w3-padding-large w3-wide p-border code-input-div"><p id="typed" style="margin: 5px;" contenteditable="false"><span class="p-text" style="height: 24px;">$></span> <span contenteditable autofocus id="code-input" class="w3-code htmlHigh notranslate code-input"></span></p></div></div></div><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"><!-- jQuery --><script defer="defer" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- <script src="https://www.w3schools.com/lib/w3codecolor.js"></script> --><!-- build:js js/lib.js --><script defer="defer" src="js/index.js"></script><!-- endbuild --></body></html>
