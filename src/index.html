@@ -69,12 +69,15 @@ def look(fpath):
 <!-- First Parallax Image with Logo Text -->
 <div class="spannerBg spanner-1 w3-display-container" id="choice">
 	<div class="w3-display-middle"
-		 style="white-space:nowrap; width: 450px;">
+		 style="white-space:nowrap;width:600px;">
 		<p>Choose your fav programming language</p>
 		<div class="w3-bar w3-light-grey">
-			<button class="w3-bar-item w3-button lang-choice">HTML</button>
-			<button class="w3-bar-item w3-button lang-choice">Haskell</button>
-			<button class="w3-bar-item w3-button lang-choice">Python</button>
+			<!-- <img class="w3-bar-item w3-button lang-choice" src="t.jpg">
+			<img class="w3-bar-item w3-button lang-choice" src="h.jpg">
+			<img class="w3-bar-item w3-button lang-choice" src="p.jpg"> -->
+			<button id="t" class="w3-bar-item w3-button lang-choice">HTML</button>
+			<button id="h" class="w3-bar-item w3-button lang-choice">Haskell</button>
+			<button id="p" class="w3-bar-item w3-button lang-choice">Python</button>
 		</div>
 	</div>
 </div>
@@ -85,7 +88,8 @@ def look(fpath):
 	<div class="w3-display-middle"
 		 style="white-space:nowrap; width: 900px;">
 		<div>
-			<p id="stats">000 lines per minute
+			<p id="stats">
+				<span id="lpm">00</span> cpm.
 				<span class="w3-right cron" id="fulltime">00:00.00</span>
 			</p>
 		</div>

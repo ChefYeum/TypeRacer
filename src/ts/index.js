@@ -18,6 +18,7 @@ $('body').ready(function(){
 	var lines;
 	var started = false;
 	var times = [];
+	var nc;
 	$('.lang-choice').click(function(){
 		lang = $(this).text();
 		// alert(lang)
@@ -29,6 +30,7 @@ $('body').ready(function(){
 		} else if(lang == "Python") {
 			ui.html($("#to-python").html());
 		}
+		nc = ui.text().length;
 		lines = ui.text().split('\n')//.map($.trim);
 		$("#choice").hide();
 		// alert(lines)
@@ -116,7 +118,16 @@ $('body').ready(function(){
 			times.push({"min": minutes, "sec": seconds, "cents": cents})
 			line_on ++;
 			input.text("")
-			setUI();
+			var cpm = nc*(60*minutes+seconds)/60
+			if (line_on != lines.length){
+				lpm.text(cpm);
+				setUI();
+			} else {
+				console.log("won")
+				clearTimeout(t);
+				p.css("font-size", "30px");
+				p.css("color", "#f00");
+			}
 		} else {
 			ev.preventDefault();
 			// input.text(inp.slice(0));
@@ -143,6 +154,7 @@ $('body').ready(function(){
 });
 
 var p = $('#fulltime'),
+	lpm = $('#lpm'),
 	cents=0, seconds = 0, minutes = 0,
 	t;
 
