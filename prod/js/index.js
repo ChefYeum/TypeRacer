@@ -1179,7 +1179,7 @@ $('body').ready(function(){
 				clearTimeout(t);
 				p.css("font-size", "30px");
 				p.css("color", "#f00");
-				ui.html(lines.join('\n'));
+				ui.html(lines.map(escape).join('\n'));
 				w3CodeColor();
 			}
 		} else {
