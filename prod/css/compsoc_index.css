@@ -126,7 +126,7 @@ nav {
   margin-right: 10px; }
 
 .lang-choice {
-  width: 200px !important;
+  width: 250px !important;
   height: 350px;
   background-size: contain !important;
   color: rgba(0, 0, 0, 0);
@@ -134,7 +134,8 @@ nav {
   font-size: 36px; }
 
 .lang-choice:hover {
-  color: white !important; }
+  color: #0f0 !important;
+  text-shadow: 0 0 5px #000; }
 
 #t {
   background: url(/t.jpg) !important; }
