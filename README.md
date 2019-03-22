@@ -18,5 +18,5 @@ Have any simple HTTPwebserver serve the dist folder
 
 
 ## Team
- - Lorenzo Baldini ([link](https://github.com/lollobaldo "lollobaldo"))
- - Dee Yeum ([link](https://github.com/zdr2780 "zdr2780"))
+ - Lorenzo Baldini ([lollobaldo](https://github.com/lollobaldo "lollobaldo"))
+ - Dee Yeum ([zdr2780](https://github.com/zdr2780 "zdr2780"))
