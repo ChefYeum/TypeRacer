@@ -3,9 +3,7 @@
 
 ## Problem
 
-Welcome to code golf!
-
-The task is simple: solve the problem below in any language of your choice in as few characters as possible.
+The problem below in any language of your choice in as few characters as possible.
 
 Your program should take input from stdin, and print the correct result to stdout.
 
@@ -18,7 +16,7 @@ For example, the next fib sequence starts with 1 and 2, like so: 1 2 3 5 8 13 ..
 
 And the third, 1 3 4 7 ...
 
-And the fourth, 1 4 5 9 ...
+And the fourtsolveh, 1 4 5 9 ...
 
 The nth sequence is denoted: 1 n n+1 n+n+1 ... and so on
 
